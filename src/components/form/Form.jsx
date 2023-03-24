@@ -8,9 +8,9 @@ import "react-datepicker/dist/react-datepicker.css";
 const Form = () => {
   return (
     <>
-      <div className="form__container_main">
+      <div className="form__container_main ">
         <Navbar/>
-        <div className="form__container">
+        <div className="form__container scale-up-center">
             <section className="form__container_header">
                 <h1>New Hackathon Submission</h1>
             </section>

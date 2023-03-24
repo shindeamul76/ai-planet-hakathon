@@ -1,0 +1,327 @@
+.deatil__container {
+    position: absolute;
+    width: 100%;
+    height: 416px;
+    left: 0px;
+    top: 66px;
+    background: var(--color-hero);
+}
+.details__container {
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 1156px;
+    height: 223px;
+    left: 142px;
+    top: calc(50% - 223px/2 - 0.5px);
+}
+
+.details__container article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+    width: 1156px;
+    height: 120px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.details__container article h2 {
+        width: 120px;
+    height: 120px;
+    background: url(../../img/InterviewMe.png) no-repeat center center/cover;
+    border-radius: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.details__container article h1{
+        width: 836px;
+    height: 63px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 63px;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+
+.details__container article div {
+        display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 120px;
+    height: 96px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.details__container_btn {
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 18px;
+    gap: 8px;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+        font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 175%;
+    color: #FFFFFF;
+
+}
+
+.details__container p {
+        width: 1156px;
+    height: 26px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.details__container>span {
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    width: 177px;
+    height: 29px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.details__container> span img {
+        width: 24px;
+    height: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.details__container_calender-sub {
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    gap: 4px;
+    width: 105px;
+    height: 29px;
+    background: #255973;
+    border-radius: 100px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+
+color: #F5F5F5;
+
+}
+
+ hr {   
+    width: 29px;
+    height: 0px;
+    opacity: 0.5;
+    border: 1px solid #F5F5F5;
+    transform: rotate(90deg);
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-top: 13px;
+}
+
+
+.details__subcontainer {
+    position: absolute;
+    left: 142px;
+    top: 532px;
+}
+
+.details__subcontainer>h1 {
+    width: 113px;
+    height: 30px;
+    left: 142px;
+    top: 532px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #222222;
+}
+
+.details__subcontainer_desp {
+    width: 763px;
+    height: 380px;
+    left: 144px;
+    top: 578px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-subtext);
+
+}
+
+.details__subcontainer_info {
+        position: absolute;
+    width: 277px;
+    height: 132px;
+    left: 1021px;
+    top: 0px;
+}
+
+.details__subcontainer_info h4 {
+    width: 93px;
+    height: 26px;
+    left: 0px;
+    top: 0px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    color: #858585;
+}
+
+.details__subcontainer_info h1 {
+    width: 275px;
+    height: 60px;
+    left: 2px;
+    top: 38px;
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color-subtext);
+}
+
+.details__subcontainer_info article {
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 227px;
+    height: 18px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #858585;
+}
+
+.details__subcontainer_info article span {
+    width: 18px;
+    height: 18px;
+    background: url(../../img/despcal.png) no-repeat center center/cover;
+    color: black;
+}
+
+.details__subcontainer_github {
+        display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    position: absolute;
+    width: 213px;
+    height: 96px;
+    left: 1021px;
+    top: 172px;
+}
+
+.details__subcontainer_github {
+        display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 213px;
+    height: 96px;
+
+}
+
+.details__subcontainer_github article {
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 18px;
+    gap: 8px;
+    width: 213px;
+    height: 40px;
+    border: 1px solid #666666;
+    border-radius: 10px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+.details__subcontainer_github article img {
+        width: 24px;
+    height: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.details__subcontainer_github article h3 {
+        width: 145px;
+    height: 28px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 175%;
+    color: #666666;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}

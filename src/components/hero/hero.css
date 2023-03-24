@@ -56,12 +56,14 @@
 }
 
 .hero__container_header button {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 12px 18px;
     gap: 8px;
+    color: #FFFFFF;
     position: absolute;
     width: 194px;
     height: 52px;
@@ -70,7 +72,6 @@
     background: #44924C;
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
-    cursor: pointer;
 }
 
 .hero__container_subhero {
@@ -108,7 +109,10 @@
     order: 0;
     flex-grow: 0;
     border: none;
+    cursor: pointer;
+    transition: all 0.5s;
 }
+
 
 .hero_subcontainer_search {
     display: flex;
@@ -138,6 +142,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+    background-color: #FFFFFF;
 }
 
 .hero__subcontainer_search-one img {
@@ -177,6 +182,7 @@
     flex: none;
     order: 1;
     flex-grow: 0;
+    background-color: #FFFFFF;
 }
 
 .hero__subcontainer_search-two select {
@@ -192,5 +198,6 @@
     flex: none;
     order: 0;
     flex-grow: 1;
+
 }
 
