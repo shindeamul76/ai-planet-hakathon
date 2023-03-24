@@ -1,0 +1,23 @@
+.navbar__container {
+    position: absolute;
+    width: 100%;
+    height: 64px;
+    left: 0px;
+    right: 0px;
+    top: 2px;
+
+    background: #FFFFFF;
+
+}
+
+.navbar__container-logo {
+    position: absolute;
+    width: 105px;
+    height: 41px;
+    left: 142px;
+    top: calc(50% - 41px/2 + 0.5px);
+}
+
+.navbar__container-logo img {
+    width: 100%;
+}
