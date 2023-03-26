@@ -60,7 +60,6 @@ export const GlobalProvider = ({children}) => {
     localStorage.setItem('favdata', JSON.stringify(favaroitData))
   }, [data, favaroitData])
 
-//   console.log(data)
 
 const handleSubmission = () => {
     setActive(!active)

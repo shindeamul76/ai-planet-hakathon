@@ -1,6 +1,5 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-// import './card.css'
 import { useGlobalContext } from '../../context/globalContext'
 import moment from 'moment'
 

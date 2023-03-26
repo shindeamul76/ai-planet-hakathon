@@ -5,7 +5,7 @@ import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
 import { useGlobalContext } from '../../context/globalContext';
-import { Navigate, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 
 let inputFormData = {
   title: "",
@@ -21,7 +21,7 @@ let inputFormData = {
 
 const Form = () => {
 
-  const { addData, editData, edit, setEdit } = useGlobalContext()
+  const { addData, editData, edit } = useGlobalContext()
   const [formData, setFormData] = useState( edit ? editData.name : inputFormData);
   const { title, summary, description, imgUrl, hakathonName, startDate,endDate, githubUrl, otherLink} = formData
 
