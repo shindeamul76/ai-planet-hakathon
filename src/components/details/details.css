@@ -101,7 +101,7 @@
     font-size: 16px;
     line-height: 175%;
     color: #FFFFFF;
-
+    cursor: pointer;
 }
 
 .details__container p {
