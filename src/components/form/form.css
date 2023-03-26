@@ -210,13 +210,18 @@
     flex-grow: 0;
 }
 
-.form__container_cover div>span {
+.form__container_cover div>label {
     width: 48px;
     height: 48px;
+    background: url(../../img/coverimg.png) no-repeat center center/cover;
     flex: none;
     order: 0;
     flex-grow: 0;
+}
 
+
+.form__container_cover div>input{
+    display: none;
 }
 
 .form__container_haker-name {

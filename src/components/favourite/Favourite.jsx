@@ -1,15 +1,17 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import './card.css'
-
+// import './card.css'
 import { useGlobalContext } from '../../context/globalContext'
 import moment from 'moment'
 
 
 
-const Card = () => {
+const Favourite = () => {
 
-    const { data, searchTerm } = useGlobalContext()
+    const { data, favaroitData } = useGlobalContext()
+
+    
+
     const navigate = useNavigate()
 
     const handleCard = (itemId) => {
@@ -20,17 +22,7 @@ const Card = () => {
     <>
     <div className="card__container">
         {
-            data && data.filter((searchquery)=> {
-                
-                if(searchTerm === '') {
-                    return searchquery
-                }else if (searchquery.first_name && searchquery.first_name.toUpperCase().includes(searchTerm.toUpperCase())){
-                    console.log(searchTerm)
-                    return searchquery;
-                }
-                return null
-
-            }).map((item) =>{
+            data && favaroitData.map((item) =>{
                 return (
             <section className="card__container_small scale-up-center" onClick={() => handleCard(item.id) } key={item.id}>
                 <article>
@@ -52,4 +44,4 @@ const Card = () => {
   )
 }
 
-export default Card
+export default Favourite

@@ -2,24 +2,20 @@ import React, { useState } from 'react'
 import './hero.css'
 import vector from '../../img/Vector.png'
 import { Link, useNavigate } from 'react-router-dom'
+import { useGlobalContext } from '../../context/globalContext'
 
 const Hero = () => {
 
-  const [active, setActive] = useState(false)
+  const { handleSubmission, active, handleSearch} = useGlobalContext()
 
   const navigate = useNavigate()
 
-  const handleSubmission = () => {
-    setActive(!active)
-  }
-
   return (
-    <>
-      
+    <>  
       <div className='hero__subcontainer'>
         <section className="hero_subcontainer_submision">
-            <button  style={active ? {borderBottom:'4px solid #44924C'} : {border:'none'}} onClick={handleSubmission}>All Submissions</button>
-            <button style={active  ? {border:'none'} : {borderBottom:'4px solid #44924C'}} onClick={handleSubmission}>Favourite Submissions</button>
+            <button  style={active  ? {border:'none'} : {borderBottom:'4px solid #44924C'}} onClick={() => handleSubmission()}>All Submissions</button>
+            <button style={active ? {borderBottom:'4px solid #44924C'} : {border:'none'}} onClick={() => handleSubmission()}>Favourite Submissions</button>
         </section>
         <section className="hero_subcontainer_search">
             <article className='hero__subcontainer_search-one'>
@@ -27,6 +23,7 @@ const Hero = () => {
             <input 
             type="text"
             placeholder='Search'
+            onChange={(e) => handleSearch(e)}
              />
             </article>
             <article className='hero__subcontainer_search-two'>
