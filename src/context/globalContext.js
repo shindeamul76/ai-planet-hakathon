@@ -53,7 +53,7 @@ export const GlobalProvider = ({children}) => {
         setEdit(false)
     }
 
-    console.log(data)
+
 
   useEffect(() => {
     localStorage.setItem('data', JSON.stringify(data))
